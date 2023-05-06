@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+
+  "name": "BlockIt",
+  "description": "Blocks a website domain for you in Chrome. All your settings will be synchronized if it is enabled in Chrome",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "webNavigation","<all_urls>","tabs","webRequest","webRequestBlocking","storage"
+  ],
+  "background":{
+    "scripts": ["background.js"]
+  }
+}
